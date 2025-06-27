@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary">
+
+    <!-- Flecha de regreso -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/ic_media_previous"
+        android:contentDescription="Regresar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp" />
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvVerificationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verificación"
+        android:textColor="@color/secondary"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserrat_bold"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Subtítulo -->
+    <TextView
+        android:id="@+id/tvVerificationSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresa el código"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:fontFamily="@font/montserrat_regular"
+        app:layout_constraintTop_toBottomOf="@id/tvVerificationTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp" />
+
+    <!-- Texto de instrucción -->
+    <TextView
+        android:id="@+id/tvVerificationInstruction"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="El código de verificación ha sido enviado a tu correo"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintTop_toBottomOf="@id/tvVerificationSubtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Inputs de código (PIN) -->
+    <LinearLayout
+        android:id="@+id/pinContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/tvVerificationInstruction"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/etPin1"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/pin_background"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/primary_dark"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_marginEnd="8dp" />
+        <EditText
+            android:id="@+id/etPin2"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/pin_background"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/primary_dark"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_marginEnd="8dp" />
+        <EditText
+            android:id="@+id/etPin3"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/pin_background"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/primary_dark"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_marginEnd="8dp" />
+        <EditText
+            android:id="@+id/etPin4"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/pin_background"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/primary_dark"
+            android:fontFamily="@font/montserrat_bold" />
+    </LinearLayout>
+
+    <!-- Texto de ayuda -->
+    <TextView
+        android:id="@+id/tvResend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿No recibiste un correo? Volver a intentarlo"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/pinContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Botón Continuar -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnContinue"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Continuar"
+        android:textColor="@color/primary_dark"
+        android:textSize="18sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:backgroundTint="@color/secondary"
+        app:cornerRadius="30dp"
+        android:elevation="6dp"
+        app:layout_constraintTop_toBottomOf="@id/tvResend"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout> 
