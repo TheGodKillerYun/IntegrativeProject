@@ -37,6 +37,9 @@
         <activity android:name=".PasswordVerificationActivity" />
         <activity android:name=".NewPasswordActivity" />
 
+        <activity android:name="utl.levn304.proyectoIntegrador.SelfMove.SinNotificacionesActivity" />
+        <activity android:name="utl.levn304.proyectoIntegrador.SelfMove.ReporteFallaActivity" />
+
         <!-- Reemplaza YOUR_API_KEY con tu API key de Google Maps -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
