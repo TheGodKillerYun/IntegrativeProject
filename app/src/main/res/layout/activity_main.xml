@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/busquedaImage"
+        android:layout_width="594dp"
+        android:layout_height="1012dp"
+        android:contentDescription="Imagen de búsqueda"
+
+        android:scaleType="fitCenter"
+        android:src="@drawable/busqueda1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-7dp" />
+
+    <LinearLayout
+        android:id="@+id/btnPlanTrip"
+        android:layout_width="480dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/rounded_beige_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:contentDescription="Buscar"
+            android:src="@drawable/ic_search"
+            android:tint="#06879C" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Planea tu viaje"
+            android:textColor="#88B2B9"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/barraMenuCasa"
+        android:layout_width="566dp"
+        android:layout_height="92dp"
+        android:layout_marginBottom="44dp"
+        android:contentDescription="Barra menú casa"
+        android:scaleType="fitCenter"
+        android:src="@drawable/barra_menu_casa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_light">
+
+    <!-- Flecha de regreso -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_return"
+        android:contentDescription="Regresar"
+        android:scaleType="fitCenter"
+        android:padding="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp" />
+
+    <!-- Card principal -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="36dp"
+        app:cardElevation="12dp"
+        app:cardBackgroundColor="@color/primary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp">
+
+        <LinearLayout
+            android:layout_width="386dp"
+            android:layout_height="429dp"
+            android:orientation="vertical"
+            android:padding="32dp">
+
+            <!-- Título -->
+
+            <!-- Subtítulo -->
+
+            <!-- Campo Email -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="308dp"
+                android:layout_height="43dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:gravity="center"
+                android:text="Iniciar Sesión"
+                android:textColor="@color/secondary"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSubtitle"
+                android:layout_width="305dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="-4dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:text="Bienvenido de nuevo"
+                android:textColor="#96CECC"
+                android:textSize="16sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilEmail"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="302dp"
+                android:layout_height="53dp"
+                app:boxBackgroundColor="@color/primary_light"
+                app:boxStrokeColor="@color/secondary"
+                app:startIconDrawable="@android:drawable/ic_dialog_email"
+                app:startIconTint="#06879C">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="316dp"
+                    android:layout_height="53dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:hint="Correo Electrónico"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#203A39" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Campo Contraseña -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilPassword"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="302dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:boxBackgroundColor="@color/primary_light"
+                app:boxStrokeColor="@color/secondary"
+                app:endIconMode="password_toggle"
+                app:startIconDrawable="@android:drawable/ic_lock_lock"
+                app:startIconTint="#06879C">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:hint="Contraseña"
+                    android:inputType="textPassword"
+                    android:textColor="#203A39" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Enlace Olvidaste tu contraseña -->
+
+            <!-- Botón Iniciar sesión -->
+            <TextView
+                android:id="@+id/tvForgotPassword"
+                android:layout_width="182dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="¿Olvidaste tu contraseña?"
+                android:textColor="#8CD6DA"
+                android:textSize="12sp" />
+
+            <!-- Enlace Crear cuenta -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogin"
+                android:layout_width="237dp"
+                android:layout_height="58dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="@color/secondary"
+                android:elevation="6dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Iniciar sesión"
+                android:textColor="#203A39"
+                android:textSize="16sp"
+                app:cornerRadius="30dp"
+                app:strokeColor="#C09D68"
+                app:strokeWidth="2dp" />
+
+            <TextView
+                android:id="@+id/tvSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="¿No tienes cuenta? Crear cuenta"
+                android:textColor="#8CD6DA"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout> 
