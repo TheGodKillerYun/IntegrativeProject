@@ -2,5 +2,9 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <solid android:color="@color/primary_light" />
     <corners android:radius="12dp" />
+<<<<<<< HEAD
     <stroke android:width="4dp" android:color="#CFF2F3" />
+=======
+    <stroke android:width="2dp" android:color="@color/secondary" />
+>>>>>>> 2bec26c7021d6396090c6c0c0d8b932a24d682a1
 </shape> 
