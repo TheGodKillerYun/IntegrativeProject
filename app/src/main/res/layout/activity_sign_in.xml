@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-<<<<<<< HEAD
     xmlns:tools="http://schemas.android.com/tools"
-=======
->>>>>>> 2bec26c7021d6396090c6c0c0d8b932a24d682a1
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primary">
@@ -12,7 +9,6 @@
     <!-- Flecha de regreso -->
     <ImageButton
         android:id="@+id/btnBack"
-<<<<<<< HEAD
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:background="@android:color/transparent"
@@ -20,20 +16,12 @@
         android:contentDescription="Regresar"
         android:scaleType="fitCenter"
         android:padding="0dp"
-=======
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:background="@android:color/transparent"
-        android:src="@android:drawable/ic_media_previous"
-        android:contentDescription="Regresar"
->>>>>>> 2bec26c7021d6396090c6c0c0d8b932a24d682a1
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="24dp"
         android:layout_marginStart="16dp" />
 
     <!-- Título -->
-<<<<<<< HEAD
 
     <!-- Subtítulo -->
 
@@ -45,17 +33,10 @@
         android:layout_height="47dp"
         android:layout_marginTop="72dp"
         android:fontFamily="@font/montserrat_bold"
-=======
-    <TextView
-        android:id="@+id/tvSignInTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
->>>>>>> 2bec26c7021d6396090c6c0c0d8b932a24d682a1
         android:text="Registro"
         android:textColor="@color/secondary"
         android:textSize="36sp"
         android:textStyle="bold"
-<<<<<<< HEAD
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.573"
         app:layout_constraintStart_toStartOf="parent"
@@ -75,29 +56,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvSignInTitle" />
 
-=======
-        android:fontFamily="@font/montserrat_bold"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="60dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <!-- Subtítulo -->
-    <TextView
-        android:id="@+id/tvSignInSubtitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Crea una cuenta nueva"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:fontFamily="@font/montserrat_regular"
-        app:layout_constraintTop_toBottomOf="@id/tvSignInTitle"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="4dp" />
-
-    <!-- Campo Nombre Completo -->
->>>>>>> 2bec26c7021d6396090c6c0c0d8b932a24d682a1
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilFullName"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -105,7 +63,6 @@
         android:layout_height="wrap_content"
         app:boxBackgroundColor="@color/primary_light"
         app:boxStrokeColor="@color/secondary"
-<<<<<<< HEAD
         app:startIconDrawable="@drawable/ic_user"
         app:startIconTint="#06879C"
         android:elevation="12dp"
@@ -115,13 +72,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"
-=======
-        app:startIconDrawable="@android:drawable/ic_menu_myplaces"
-        app:layout_constraintTop_toBottomOf="@id/tvSignInSubtitle"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="32dp"
->>>>>>> 2bec26c7021d6396090c6c0c0d8b932a24d682a1
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp">
 
@@ -132,13 +82,9 @@
             android:hint="Nombre Completo"
             android:inputType="textPersonName"
             android:textColor="@color/primary_dark"
-<<<<<<< HEAD
             android:fontFamily="@font/montserrat_medium"
             android:paddingStart="0dp"
             android:paddingLeft="0dp"/>
-=======
-            android:fontFamily="@font/montserrat_regular" />
->>>>>>> 2bec26c7021d6396090c6c0c0d8b932a24d682a1
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Campo Correo -->
@@ -150,10 +96,7 @@
         app:boxBackgroundColor="@color/primary_light"
         app:boxStrokeColor="@color/secondary"
         app:startIconDrawable="@android:drawable/ic_dialog_email"
-<<<<<<< HEAD
         app:startIconTint="#06879C"
-=======
->>>>>>> 2bec26c7021d6396090c6c0c0d8b932a24d682a1
         app:layout_constraintTop_toBottomOf="@id/tilFullName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -168,11 +111,7 @@
             android:hint="Correo Electrónico"
             android:inputType="textEmailAddress"
             android:textColor="@color/primary_dark"
-<<<<<<< HEAD
             android:fontFamily="@font/montserrat_medium" />
-=======
-            android:fontFamily="@font/montserrat_regular" />
->>>>>>> 2bec26c7021d6396090c6c0c0d8b932a24d682a1
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Campo Contraseña -->
@@ -184,10 +123,7 @@
         app:boxBackgroundColor="@color/primary_light"
         app:boxStrokeColor="@color/secondary"
         app:startIconDrawable="@android:drawable/ic_lock_lock"
-<<<<<<< HEAD
         app:startIconTint="#06879C"
-=======
->>>>>>> 2bec26c7021d6396090c6c0c0d8b932a24d682a1
         app:endIconMode="password_toggle"
         app:layout_constraintTop_toBottomOf="@id/tilEmail"
         app:layout_constraintStart_toStartOf="parent"
@@ -203,7 +139,6 @@
             android:hint="Contraseña"
             android:inputType="textPassword"
             android:textColor="@color/primary_dark"
-<<<<<<< HEAD
             app:startIconTint="#06879C"
             android:fontFamily="@font/montserrat_medium" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -212,17 +147,10 @@
 
     <!-- Botón Crear cuenta -->
 
-=======
-            android:fontFamily="@font/montserrat_regular" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <!-- Checkbox de términos -->
->>>>>>> 2bec26c7021d6396090c6c0c0d8b932a24d682a1
     <CheckBox
         android:id="@+id/cbTerms"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
         android:layout_marginStart="4dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/montserrat_regular"
@@ -252,34 +180,6 @@
         app:layout_constraintTop_toBottomOf="@id/cbTerms"
         app:strokeColor="#C09D68"
         app:strokeWidth="2dp" />
-=======
-        android:text="Estoy de acuerdo con las condiciones y Políticas de privacidad"
-        android:textColor="@color/white"
-        android:fontFamily="@font/montserrat_regular"
-        android:textSize="12sp"
-        app:layout_constraintTop_toBottomOf="@id/tilPassword"
-        app:layout_constraintStart_toStartOf="@id/tilPassword"
-        android:layout_marginTop="8dp" />
-
-    <!-- Botón Crear cuenta -->
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnSignIn"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:text="Crear cuenta"
-        android:textColor="@color/primary_dark"
-        android:textSize="18sp"
-        android:fontFamily="@font/montserrat_bold"
-        android:backgroundTint="@color/secondary"
-        app:cornerRadius="30dp"
-        android:elevation="6dp"
-        app:layout_constraintTop_toBottomOf="@id/cbTerms"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp" />
->>>>>>> 2bec26c7021d6396090c6c0c0d8b932a24d682a1
 
     <!-- Separador -->
     <View
@@ -324,15 +224,9 @@
             android:id="@+id/btnFacebook"
             android:layout_width="56dp"
             android:layout_height="56dp"
-<<<<<<< HEAD
             android:background="@drawable/ic_fb2"
             android:src="@drawable/ic_fb2"
             android:scaleType="centerInside"
-=======
-            android:backgroundTint="@color/white"
-            android:background="@drawable/ic_card"
-            android:src="@drawable/ic_card"
->>>>>>> 2bec26c7021d6396090c6c0c0d8b932a24d682a1
             android:contentDescription="Facebook" />
 
         <Space android:layout_width="24dp" android:layout_height="0dp" />
@@ -341,37 +235,21 @@
             android:id="@+id/btnGoogle"
             android:layout_width="56dp"
             android:layout_height="56dp"
-<<<<<<< HEAD
             android:background="@android:color/transparent"
             android:contentDescription="Google"
             android:src="@drawable/ic_go"
             android:scaleType="centerInside" />
-=======
-            android:backgroundTint="@color/white"
-            android:background="@drawable/ic_search"
-            android:src="@drawable/ic_search"
-            android:contentDescription="Google" />
->>>>>>> 2bec26c7021d6396090c6c0c0d8b932a24d682a1
 
         <Space android:layout_width="24dp" android:layout_height="0dp" />
 
         <ImageButton
             android:id="@+id/btnApple"
-<<<<<<< HEAD
             android:layout_width="58dp"
             android:layout_height="match_parent"
             android:background="@android:color/transparent"
             android:contentDescription="Apple"
             android:scaleType="centerInside"
             android:src="@drawable/ic_ios" />
-=======
-            android:layout_width="56dp"
-            android:layout_height="56dp"
-            android:backgroundTint="@color/white"
-            android:background="@drawable/ic_settings"
-            android:src="@drawable/ic_settings"
-            android:contentDescription="Apple" />
->>>>>>> 2bec26c7021d6396090c6c0c0d8b932a24d682a1
     </LinearLayout>
 
     <!-- Enlace para iniciar sesión -->
@@ -379,7 +257,6 @@
         android:id="@+id/tvGoToLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
         android:layout_marginBottom="52dp"
         android:fontFamily="@font/montserrat_regular"
         android:text="¿Ya tienes una cuenta? Iniciar sesión"
@@ -388,15 +265,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-=======
-        android:text="¿Ya tienes una cuenta? Iniciar sesión"
-        android:textColor="@color/white"
-        android:textSize="14sp"
-        android:fontFamily="@font/montserrat_regular"
-        android:layout_marginBottom="32dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
->>>>>>> 2bec26c7021d6396090c6c0c0d8b932a24d682a1
 
 </androidx.constraintlayout.widget.ConstraintLayout> 
