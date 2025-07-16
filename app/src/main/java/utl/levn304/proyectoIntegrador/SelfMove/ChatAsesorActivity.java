@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
-import utl.levn304.proyectoIntegrador.R;
+import utl.levn304.proyectoIntegrador.SelfMove.R;
 
 public class ChatAsesorActivity extends AppCompatActivity {
     @Override

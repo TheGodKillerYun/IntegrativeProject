@@ -22,19 +22,21 @@
         android:layout_marginStart="16dp" />
 
     <!-- Título -->
+
+    <!-- Subtítulo -->
     <TextView
         android:id="@+id/tvSignInTitle"
         android:layout_width="186dp"
         android:layout_height="47dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="4dp"
         android:text="Registro"
         android:textColor="@color/secondary"
         android:textSize="36sp"
         android:textStyle="bold"
-        app:layout_constraintHorizontal_bias="0.573"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Subtítulo -->
     <TextView
         android:id="@+id/tvSignInSubtitle"
         android:layout_width="188dp"

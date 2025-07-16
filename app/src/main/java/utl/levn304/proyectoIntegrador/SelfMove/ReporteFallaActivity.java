@@ -9,7 +9,7 @@ import android.widget.ImageButton;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import utl.levn304.proyectoIntegrador.R;
+import utl.levn304.proyectoIntegrador.SelfMove.R;
 
 public class ReporteFallaActivity extends AppCompatActivity {
     @Override
@@ -32,7 +32,7 @@ public class ReporteFallaActivity extends AppCompatActivity {
                 startActivity(new Intent(this, MainActivity.class));
                 return true;
             } else if (id == R.id.navigation_dashboard) {
-                startActivity(new Intent(this, DashboardActivity.class));
+                startActivity(new Intent(this, RoutesActivity.class));
                 return true;
             } else if (id == R.id.navigation_notifications) {
                 startActivity(new Intent(this, NotificationsActivity.class));

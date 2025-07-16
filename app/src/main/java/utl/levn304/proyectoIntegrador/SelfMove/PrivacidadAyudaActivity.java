@@ -16,15 +16,14 @@ public class PrivacidadAyudaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_privacidad_ayuda);
 
         ImageButton btnBack = findViewById(R.id.btnBack);
-        ImageButton btnBack2 = findViewById(R.id.btnBack2);
         View.OnClickListener backListener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 onBackPressed();
             }
         };
+
         btnBack.setOnClickListener(backListener);
-        btnBack2.setOnClickListener(backListener);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnItemSelectedListener(item -> {
