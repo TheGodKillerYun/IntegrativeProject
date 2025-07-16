@@ -7,7 +7,7 @@ import android.widget.ImageButton;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import utl.levn304.proyectoIntegrador.R;
+import utl.levn304.proyectoIntegrador.SelfMove.R;
 
 public class UbicacionesFavoritasActivity extends AppCompatActivity {
     @Override
@@ -24,23 +24,20 @@ public class UbicacionesFavoritasActivity extends AppCompatActivity {
         });
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-        bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
-            switch (item.getItemId()) {
-                case R.id.navigation_home:
-                    startActivity(new Intent(this, MainActivity.class));
-                    return true;
-                case R.id.navigation_search:
-                    // Agrega aquí la Activity correspondiente si existe
-                    return true;
-                case R.id.navigation_chat:
-                    startActivity(new Intent(this, ChatAsesorActivity.class));
-                    return true;
-                case R.id.navigation_notifications:
-                    startActivity(new Intent(this, NotificationsActivity.class));
-                    return true;
-                case R.id.navigation_settings:
-                    // Agrega aquí la Activity correspondiente si existe
-                    return true;
+        bottomNavigationView.setOnItemSelectedListener(item -> {
+            int id = item.getItemId();
+            if (id == R.id.navigation_home) {
+                startActivity(new Intent(this, MainActivity.class));
+                return true;
+            } else if (id == R.id.navigation_search) {
+                // Agrega aquí la Activity correspondiente si existe
+                return true;
+            } else if (id == R.id.navigation_notifications) {
+                startActivity(new Intent(this, NotificationsActivity.class));
+                return true;
+            } else if (id == R.id.navigation_settings) {
+                // Agrega aquí la Activity correspondiente si existe
+                return true;
             }
             return false;
         });

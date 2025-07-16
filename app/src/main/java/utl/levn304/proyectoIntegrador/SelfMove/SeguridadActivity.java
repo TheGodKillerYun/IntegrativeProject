@@ -1,10 +1,12 @@
 package utl.levn304.proyectoIntegrador.SelfMove;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class SeguridadActivity extends AppCompatActivity {
     @Override
@@ -18,6 +20,18 @@ public class SeguridadActivity extends AppCompatActivity {
             public void onClick(View v) {
                 onBackPressed();
             }
+        });
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setOnItemSelectedListener(item -> {
+            int id = item.getItemId();
+            if (id == R.id.navigation_home) {
+                Intent intent = new Intent(this, MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(intent);
+                return true;
+            }
+            return false;
         });
     }
 } 

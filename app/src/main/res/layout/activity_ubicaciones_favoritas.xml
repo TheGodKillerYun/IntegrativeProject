@@ -135,15 +135,17 @@
             android:textSize="15sp" />
     </LinearLayout>
 
-    <!-- Menú inferior -->
+    <!-- Barra de navegación inferior -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#168089"
-        app:itemIconTint="@color/white"
-        app:itemTextColor="@color/white"
+        android:background="#F6ECDC"
+        app:itemIconTint="#06879C"
+        app:itemTextColor="#06879C"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_nav_menu" />
 
     <TextView

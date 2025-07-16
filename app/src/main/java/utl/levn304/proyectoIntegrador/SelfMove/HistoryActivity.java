@@ -1,9 +1,11 @@
 package utl.levn304.proyectoIntegrador.SelfMove;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class HistoryActivity extends AppCompatActivity {
     @Override
@@ -17,6 +19,38 @@ public class HistoryActivity extends AppCompatActivity {
             public void onClick(View v) {
                 finish();
             }
+        });
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setOnItemSelectedListener(item -> {
+            int id = item.getItemId();
+            if (id == R.id.navigation_home) {
+                Intent intent = new Intent(this, MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(intent);
+                return true;
+            } else if (id == R.id.navigation_search) {
+                Intent intent = new Intent(this, RoutesActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(intent);
+                return true;
+            } else if (id == R.id.navigation_card) {
+                Intent intent = new Intent(this, PagoBusActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(intent);
+                return true;
+            } else if (id == R.id.navigation_notifications) {
+                Intent intent = new Intent(this, NotificationsActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(intent);
+                return true;
+            } else if (id == R.id.navigation_settings) {
+                Intent intent = new Intent(this, AccountActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(intent);
+                return true;
+            }
+            return false;
         });
     }
 } 

@@ -15,28 +15,24 @@ public class PagoBusActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pagobus);
 
-        ImageButton btnBack = findViewById(R.id.btnBack);
-        btnBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackPressed();
-            }
-        });
-
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setSelectedItemId(R.id.navigation_card);
         bottomNavigationView.setOnItemSelectedListener(item -> {
             int id = item.getItemId();
             if (id == R.id.navigation_home) {
-                startActivity(new Intent(this, MainActivity.class));
+                startActivity(new android.content.Intent(this, MainActivity.class));
                 return true;
-            } else if (id == R.id.navigation_dashboard) {
-                // Aquí puedes poner la navegación a Dashboard si existe
+            } else if (id == R.id.navigation_search) {
+                startActivity(new android.content.Intent(this, RoutesActivity.class));
+                return true;
+            } else if (id == R.id.navigation_card) {
+                recreate();
                 return true;
             } else if (id == R.id.navigation_notifications) {
-                // Aquí puedes poner la navegación a Notifications si existe
+                startActivity(new android.content.Intent(this, NotificationsActivity.class));
                 return true;
             } else if (id == R.id.navigation_settings) {
-                // Aquí puedes poner la navegación a Settings si existe
+                startActivity(new android.content.Intent(this, AccountActivity.class));
                 return true;
             }
             return false;

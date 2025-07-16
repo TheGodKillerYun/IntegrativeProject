@@ -16,12 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SelfMove"
         tools:targetApi="31">
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/app_name">
-        </activity>
-
+        <activity android:name=".MainActivity" android:exported="true" android:label="@string/app_name" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".SignInActivity" />
         <activity android:name=".LogoActivity" android:exported="true">
@@ -31,20 +26,35 @@
             </intent-filter>
         </activity>
         <activity android:name=".WelcomeActivity" />
-
         <activity android:name=".RecoverPasswordActivity" />
         <activity android:name=".VerificationActivity" />
         <activity android:name=".PasswordVerificationActivity" />
         <activity android:name=".NewPasswordActivity" />
-
         <activity android:name="utl.levn304.proyectoIntegrador.SelfMove.SinNotificacionesActivity" />
         <activity android:name="utl.levn304.proyectoIntegrador.SelfMove.ReporteFallaActivity" />
-
-        <!-- Reemplaza YOUR_API_KEY con tu API key de Google Maps -->
+        <!-- Agregadas automáticamente -->
+        <activity android:name="utl.levn304.proyectoIntegrador.SelfMove.ChangePwActivity" />
+        <activity android:name="utl.levn304.proyectoIntegrador.SelfMove.UbicacionesFavoritasActivity" />
+        <activity android:name="utl.levn304.proyectoIntegrador.SelfMove.CallCenterActivity" />
+        <activity android:name="utl.levn304.proyectoIntegrador.SelfMove.AccountActivity" />
+        <activity android:name="utl.levn304.proyectoIntegrador.SelfMove.HistoryActivity" />
+        <activity android:name="utl.levn304.proyectoIntegrador.SelfMove.RoutesActivity" />
+        <activity android:name="utl.levn304.proyectoIntegrador.SelfMove.SeguridadActivity" />
+        <activity android:name="utl.levn304.proyectoIntegrador.SelfMove.ConditionsActivity" />
+        <activity android:name="utl.levn304.proyectoIntegrador.SelfMove.SearchMapActivity" />
+        <activity android:name="utl.levn304.proyectoIntegrador.SelfMove.ScheduleThreeActivity" />
+        <activity android:name="utl.levn304.proyectoIntegrador.SelfMove.ScheduleTwoActivity" />
+        <activity android:name="utl.levn304.proyectoIntegrador.SelfMove.ScheduleActivity" />
+        <activity android:name="utl.levn304.proyectoIntegrador.SelfMove.ChatAsesorActivity" />
+        <activity android:name="utl.levn304.proyectoIntegrador.SelfMove.NotificationsActivity" />
+        <activity android:name="utl.levn304.proyectoIntegrador.SelfMove.PagoBusActivity" />
+        <activity android:name="utl.levn304.proyectoIntegrador.SelfMove.PrivacidadAyudaActivity" />
+        <activity android:name="utl.levn304.proyectoIntegrador.SelfMove.AvisoSeguridadActivity" />
+        <activity android:name="utl.levn304.proyectoIntegrador.SelfMove.AyudaActivity" />
+        <!-- Fin de actividades agregadas -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="YOUR_API_KEY" />
-
     </application>
 
 </manifest>

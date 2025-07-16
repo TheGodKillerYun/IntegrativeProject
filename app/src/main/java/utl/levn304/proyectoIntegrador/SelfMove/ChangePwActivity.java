@@ -62,20 +62,20 @@ public class ChangePwActivity extends AppCompatActivity {
             }
         });
 
-        bottomNav.setOnNavigationItemSelectedListener(item -> {
-            switch (item.getItemId()) {
-                case R.id.navigation_home:
-                    startActivity(new Intent(this, MainActivity.class));
-                    return true;
-                case R.id.navigation_dashboard:
-                    startActivity(new Intent(this, AccountActivity.class));
-                    return true;
-                case R.id.navigation_notifications:
-                    startActivity(new Intent(this, NotificationsFragment.class));
-                    return true;
-                case R.id.navigation_settings:
-                    // Ya estamos en configuración
-                    return true;
+        bottomNav.setOnItemSelectedListener(item -> {
+            int id = item.getItemId();
+            if (id == R.id.navigation_home) {
+                startActivity(new Intent(this, MainActivity.class));
+                return true;
+            } else if (id == R.id.navigation_search) {
+                // Agrega aquí la Activity correspondiente si existe
+                return true;
+            } else if (id == R.id.navigation_notifications) {
+                startActivity(new Intent(this, NotificationsActivity.class));
+                return true;
+            } else if (id == R.id.navigation_settings) {
+                // Ya estamos en configuración
+                return true;
             }
             return false;
         });
