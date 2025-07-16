@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8EC9CE"
+    tools:context=".ChangePwActivity">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/circle_background"
+        android:src="@drawable/ic_return"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_margin="24dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Perfil"
+        android:textColor="#111111"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_margin="32dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnChangePw"
+        android:layout_width="247dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button_efc27b"
+        android:elevation="4dp"
+        android:text="Cambiar contraseña"
+        android:textColor="#222222"
+        android:textStyle="bold"
+        app:layout_constraintEnd_margin="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_margin="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvForgotPw" />
+
+    <EditText
+        android:id="@+id/etNewPw"
+        android:layout_width="386dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edittext_white"
+        android:hint="Contraseña nueva"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColor="#111111"
+        android:textColorHint="#7CA6A9"
+        app:layout_constraintEnd_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etCurrentPw" />
+
+    <EditText
+        android:id="@+id/etRepeatNewPw"
+        android:layout_width="386dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edittext_white"
+        android:hint="Repetir contraseña nueva"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColor="#111111"
+        android:textColorHint="#7CA6A9"
+        app:layout_constraintEnd_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etNewPw" />
+
+    <EditText
+        android:id="@+id/etCurrentPw"
+        android:layout_width="386dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_edittext_white"
+        android:hint="Contraseña actual"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColor="#111111"
+        android:textColorHint="#7CA6A9"
+        app:layout_constraintEnd_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPwInfo" />
+
+    <TextView
+        android:id="@+id/tvForgotPw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="¿Olvidaste tu contraseña?"
+        android:textColor="#2A6F7C"
+        android:textSize="14sp"
+        app:layout_constraintStart_margin="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etRepeatNewPw" />
+
+    <TextView
+        android:id="@+id/tvChangePw"
+        android:layout_width="286dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Cambiar contraseña"
+        android:textColor="#111111"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_margin="24dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvPwInfo"
+        android:layout_width="0386dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="La contraseña debe tener al menos 6 caracteres e incluir una combinación de números, letras y caracteres especiales (! $@%)"
+        android:textColor="#111111"
+        android:textSize="15sp"
+        app:layout_constraintEnd_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_margin="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tvChangePw" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:menu="@menu/bottom_nav_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout> 
