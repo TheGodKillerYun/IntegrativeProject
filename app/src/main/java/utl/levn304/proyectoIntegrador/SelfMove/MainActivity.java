@@ -9,6 +9,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.gms.maps.model.CameraPosition;
+import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity implements OnMapReadyCallback {
     private GoogleMap mMap;
@@ -43,7 +44,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 // Manejar clic en Notificaciones
                 return true;
             } else if (itemId == R.id.navigation_settings) {
-                // Manejar clic en Configuración
+                // Abrir AccountActivity
+                startActivity(new Intent(this, AccountActivity.class));
                 return true;
             }
             return false;
