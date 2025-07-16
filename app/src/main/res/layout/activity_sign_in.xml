@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primary">
@@ -9,8 +9,8 @@
     <!-- Flecha de regreso -->
     <ImageButton
         android:id="@+id/btnBack"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:background="@android:color/transparent"
         android:src="@drawable/ic_return_black_24dp"
         android:contentDescription="Regresar"
@@ -22,40 +22,33 @@
         android:layout_marginStart="16dp" />
 
     <!-- Título -->
-
-    <!-- Subtítulo -->
-
-    <!-- Campo Nombre Completo -->
-
     <TextView
         android:id="@+id/tvSignInTitle"
         android:layout_width="186dp"
         android:layout_height="47dp"
-        android:layout_marginTop="72dp"
-        android:fontFamily="@font/montserrat_bold"
         android:text="Registro"
         android:textColor="@color/secondary"
         android:textSize="36sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.573"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Subtítulo -->
     <TextView
         android:id="@+id/tvSignInSubtitle"
         android:layout_width="188dp"
         android:layout_height="23dp"
-        android:layout_marginTop="4dp"
-        android:fontFamily="@font/montserrat_regular"
         android:text="Crea una cuenta nueva"
         android:textColor="@color/white"
         android:textSize="16sp"
+        android:fontFamily="@font/montserrat_regular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.569"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvSignInTitle" />
 
+    <!-- Campo Nombre Completo -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilFullName"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -144,23 +137,22 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Checkbox de términos -->
-
-    <!-- Botón Crear cuenta -->
-
     <CheckBox
         android:id="@+id/cbTerms"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/montserrat_regular"
         android:text="Estoy de acuerdo con las Condiciones y Políticas\n de privacidad"
         android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_regular"
         android:buttonTint="@color/white"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@id/tilPassword"
-        app:layout_constraintTop_toBottomOf="@id/tilPassword" />
+        app:layout_constraintTop_toBottomOf="@id/tilPassword"/>
 
+
+    <!-- Botón Crear cuenta -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnSignIn"
         android:layout_width="324dp"
@@ -263,7 +255,7 @@
         android:textColor="@color/white"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout> 
